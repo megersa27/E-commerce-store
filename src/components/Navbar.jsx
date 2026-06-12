@@ -1,7 +1,9 @@
+// src/components/Navbar.jsx
+
 function Navbar() {
   return (
     <nav>
-      <h2>MegersaStore</h2>
+      <h2>Megersa Store</h2>
       <p>Cart (0)</p>
     </nav>
   );

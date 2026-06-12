@@ -1,23 +1,24 @@
+import ProductCard from "./ProductCard";
+import products from "../data/products";
+
 function FeaturedProducts() {
   return (
     <section>
       <h2>Featured Products</h2>
 
       <div className="products">
-        <div className="product">
-          <h3>Nike Shoes</h3>
-          <p>$120</p>
-        </div>
 
-        <div className="product">
-          <h3>Adidas Shoes</h3>
-          <p>$140</p>
-        </div>
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            title={product.title}
+            price={product.price}
+            category={product.category}
+            rating={product.rating}
+            image={product.image}
+          />
+        ))}
 
-        <div className="product">
-          <h3>Puma Shoes</h3>
-          <p>$110</p>
-        </div>
       </div>
     </section>
   );
