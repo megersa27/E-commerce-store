@@ -16,8 +16,11 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 80px;
-  background: white;
+  background: rgb(236, 240, 235);
   color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
 }
 nav h2{
   color: black;
@@ -27,6 +30,7 @@ nav h2{
 section {
   text-align: center;
   padding: 60px 20px;
+  margin-top: 80px;
 }
 
 button {
@@ -42,6 +46,7 @@ button {
   gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .product {

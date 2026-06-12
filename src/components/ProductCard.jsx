@@ -1,28 +1,44 @@
-function ProductCard(props) {
+function ProductCard({
+  title,
+  price,
+  rating,
+  image,
+  cartCount,
+  setCartCount,
+}) {
+  function handleAddToCart() {
+    setCartCount((previousCount) => previousCount + 1);
+  }
+    function handleRemoveFromCart() {
+        if (cartCount > 0) {
+    setCartCount((previousCount) => previousCount - 1);
+  }
+}
+
   return (
     <div className="product">
-
       <img
-        src={props.image}
-        alt={props.title}
+        src={image}
+        alt={title}
         className="product-image"
       />
 
-      <h3>{props.title}</h3>
-      <p>{props.category}</p>
+      <h3>{title}</h3>
 
       <p className="rating">
-        ⭐ {props.rating}
+        ⭐ {rating}
       </p>
 
       <p className="price">
-        ${props.price}
+        ${price}
       </p>
 
-      <button>
+      <button onClick={handleAddToCart}>
         Add To Cart
       </button>
-
+      <button onClick={handleRemoveFromCart}>
+        Remove Cart
+      </button>
     </div>
   );
 }
