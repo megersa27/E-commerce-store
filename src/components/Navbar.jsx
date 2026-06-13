@@ -1,9 +1,9 @@
-function Navbar({ cartCount }) {
+function Navbar({ cartItems }) {
   return (
     <nav>
       <h2>Megersa Store</h2>
 
-      <p>Cart ({cartCount})</p>
+      <p>Cart ({cartItems.length})</p>
     </nav>
   );
 }

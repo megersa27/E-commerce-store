@@ -1,7 +1,9 @@
 import ProductCard from "./ProductCard";
 import products from "../data/products";
 
-function FeaturedProducts({ cartCount, setCartCount }) {
+function FeaturedProducts({
+  setCartItems,
+}) {
   return (
     <section>
       <h2>Featured Products</h2>
@@ -10,12 +12,8 @@ function FeaturedProducts({ cartCount, setCartCount }) {
         {products.map((product) => (
           <ProductCard
             key={product.id}
-            title={product.title}
-            price={product.price}
-            rating={product.rating}
-            image={product.image}
-            cartCount={cartCount}
-            setCartCount={setCartCount}
+            product={product}
+            setCartItems={setCartItems}
           />
         ))}
       </div>

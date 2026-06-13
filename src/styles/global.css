@@ -92,4 +92,45 @@ footer {
   color: black;
   padding: 20px;
   margin-top: 40px;
+  
+}
+footer .bult {
+  font-size: 14px;
+  color: #555;
+  font-family:'Courier New', Courier, monospace;
+}
+.cart-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-items {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cart-item {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+
+}
+
+.remove-btn {
+  background: crimson;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
 }
